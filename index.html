@@ -1,152 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Adalia Mahabir | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Adalia Mahabir | IT Portfolio</title>
+
+  <meta name="description"
+    content="Portfolio of Adalia Mahabir showcasing IT support, networking, computer science, and technical projects." />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <!-- NAVBAR -->
-  <nav>
+  <nav class="navbar">
+
     <h2 class="logo">Adalia.</h2>
 
-    <ul>
+    <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#resume">Resume</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+
   </nav>
 
   <!-- HERO -->
   <header class="hero">
 
     <div class="hero-text">
+
+      <button id="darkModeToggle" class="toggle-btn">
+        🌙 Dark Mode
+      </button>
+
       <h1>Adalia Mahabir</h1>
 
-      <p>
-        Computer Science with Management Student
-        • Diploma in IT Networking
-        • IT Support Enthusiast
+      <p class="hero-subtitle">
+        Computer Science with Management Student •
+        Diploma in IT Networking •
+        IT Support Enthusiast
+      </p>
+
+      <p class="hero-description">
+        Passionate about troubleshooting, networking,
+        and building practical technical solutions.
       </p>
 
       <div class="hero-buttons">
-        <a href="AdaliaMahabirResume2025.pdf" class="btn primary" target="_blank">
+
+        <a href="AdaliaMahabirResume2025.pdf"
+          target="_blank"
+          class="btn primary-btn">
           Download Resume
         </a>
 
-        <a href="mailto:adaliamahabir@gmail.com" class="btn secondary">
+        <a href="mailto:adaliamahabir@gmail.com"
+          class="btn secondary-btn">
           Contact Me
         </a>
+
       </div>
 
+      <!-- SOCIALS -->
       <div class="socials">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+
+        <a href="https://linkedin.com"
+          target="_blank"
+          aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://github.com"
+          target="_blank"
+          aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://instagram.com"
+          target="_blank"
+          aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+
       </div>
+
     </div>
 
+    <!-- HERO IMAGE -->
     <div class="hero-image">
-      <img src="https://cdn.pixabay.com/photo/2023/05/16/16/12/developer-7997495_960_720.png" alt="Developer Illustration">
+
+      <img
+        src="https://cdn.pixabay.com/photo/2023/05/16/16/12/developer-7997495_960_720.png"
+        alt="Developer Illustration">
+
     </div>
 
   </header>
 
   <!-- ABOUT -->
-  <section id="about">
+  <section id="about" class="section">
 
     <h2>About Me</h2>
 
     <p>
-      I'm Adalia Mahabir, a Computer Science student with a Diploma in IT Networking.
-      I enjoy solving real-world technical problems, troubleshooting systems,
-      and continuously expanding my skills in networking, IT support, and software.
+      I'm Adalia Mahabir, a Computer Science student
+      with a Diploma in IT Networking and a passion
+      for technology, troubleshooting, and continuous learning.
     </p>
 
     <p>
-      I’m currently seeking opportunities that allow me to grow professionally
-      while balancing my academic journey.
+      I enjoy solving technical problems, working on networking projects,
+      and expanding my skills in IT support and software development.
     </p>
 
   </section>
 
   <!-- SKILLS -->
-  <section id="skills">
+  <section id="skills" class="section">
 
     <h2>Skills</h2>
 
     <div class="skills-grid">
 
       <div class="skill-card">IT Support</div>
+
       <div class="skill-card">Networking</div>
+
       <div class="skill-card">Computer Repairs</div>
-      <div class="skill-card">SQL</div>
-      <div class="skill-card">Python Basics</div>
-      <div class="skill-card">Troubleshooting</div>
-      <div class="skill-card">Windows Administration</div>
+
       <div class="skill-card">Cisco Packet Tracer</div>
+
+      <div class="skill-card">SQL</div>
+
+      <div class="skill-card">Python Basics</div>
+
+      <div class="skill-card">Windows Administration</div>
+
+      <div class="skill-card">Troubleshooting</div>
 
     </div>
 
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects">
+  <section id="projects" class="section">
 
     <h2>Projects</h2>
 
     <div class="projects-grid">
 
-      <!-- Packet Tracer -->
+      <!-- PROJECT 1 -->
       <div class="project-card">
+
         <h3>Packet Tracer Labs</h3>
 
         <p>
-          Networking simulations and configurations created using Cisco Packet Tracer.
+          Networking simulations and configurations
+          built using Cisco Packet Tracer.
         </p>
 
-        <a href="https://docs.google.com/document/d/1RydJRIjQVu-z5sCUpCIfxHi4IZa8fCxO/edit" target="_blank">
+        <a href="https://docs.google.com/document/d/1RydJRIjQVu-z5sCUpCIfxHi4IZa8fCxO/edit"
+          target="_blank"
+          class="project-link">
           View Project
         </a>
+
       </div>
 
-      <!-- Repairs -->
+      <!-- PROJECT 2 -->
       <div class="project-card">
+
         <h3>Computer Repair Guides</h3>
 
         <p>
-          Step-by-step troubleshooting and repair documentation for hardware/software issues.
+          Step-by-step troubleshooting and repair
+          documentation for hardware and software issues.
         </p>
 
-        <a href="https://docs.google.com/document/d/13EwDqPq2qH8bx3d6j_AnvfE4vl8SLvWe/edit" target="_blank">
+        <a href="https://docs.google.com/document/d/13EwDqPq2qH8bx3d6j_AnvfE4vl8SLvWe/edit"
+          target="_blank"
+          class="project-link">
           View Guide
         </a>
+
       </div>
 
-      <!-- SQL -->
+      <!-- PROJECT 3 -->
       <div class="project-card">
+
         <h3>SQL Database Projects</h3>
 
         <p>
-          SQL projects involving queries, database design, and data organization.
+          Database design, SQL queries,
+          and data organization projects.
         </p>
 
-        <a href="https://docs.google.com/document/d/1XHuoz_avTfi-tpVNkwn0LslfayECa4k1/edit" target="_blank">
+        <a href="https://docs.google.com/document/d/1XHuoz_avTfi-tpVNkwn0LslfayECa4k1/edit"
+          target="_blank"
+          class="project-link">
           View Project
         </a>
+
       </div>
 
     </div>
@@ -154,7 +229,7 @@
   </section>
 
   <!-- RESUME -->
-  <section id="resume">
+  <section id="resume" class="section">
 
     <h2>Resume</h2>
 
@@ -162,14 +237,16 @@
       Download my latest resume below.
     </p>
 
-    <a href="AdaliaMahabirResume2025.pdf" target="_blank" class="btn primary">
+    <a href="AdaliaMahabirResume2025.pdf"
+      target="_blank"
+      class="btn primary-btn">
       Download Resume
     </a>
 
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
+  <section id="contact" class="section">
 
     <h2>Contact</h2>
 
@@ -183,8 +260,34 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>Made with purpose ✨ | Adalia Mahabir © 2026</p>
+
+    <p>
+      Made with purpose ✨ | Adalia Mahabir © 2026
+    </p>
+
   </footer>
 
+  <!-- DARK MODE SCRIPT -->
+  <script>
+
+    const toggleBtn = document.getElementById('darkModeToggle');
+
+    toggleBtn.addEventListener('click', () => {
+
+      document.body.classList.toggle('dark-mode');
+
+      if (document.body.classList.contains('dark-mode')) {
+        toggleBtn.textContent = '☀️ Light Mode';
+      }
+
+      else {
+        toggleBtn.textContent = '🌙 Dark Mode';
+      }
+
+    });
+
+  </script>
+
 </body>
+
 </html>
