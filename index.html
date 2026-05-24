@@ -1,293 +1,144 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Adalia Mahabir | IT Portfolio</title>
-
-  <meta name="description"
-    content="Portfolio of Adalia Mahabir showcasing IT support, networking, computer science, and technical projects." />
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-
-  <!-- Font Awesome -->
+  <meta name="description" content="Adalia Mahabir's Tech Portfolio showcasing projects in computer science, networking, and repairs." />
+  
+  <link rel="stylesheet" href="style.css" />
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖥️</text></svg>"
+  />
 </head>
+<body class="light-mode">
 
-<body>
-
-  <!-- NAVBAR -->
-  <nav class="navbar">
-
-    <h2 class="logo">Adalia.</h2>
-
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-  </nav>
-
-  <!-- HERO -->
   <header class="hero">
+    <button id="darkModeToggle" aria-label="Toggle dark mode">🌙 Toggle Dark Mode</button>
 
-    <div class="hero-text">
-
-      <button id="darkModeToggle" class="toggle-btn">
-        🌙 Dark Mode
-      </button>
-
-      <h1>Adalia Mahabir</h1>
-
-      <p class="hero-subtitle">
-        Computer Science with Management Student •
-        Diploma in IT Networking •
-        IT Support Enthusiast
-      </p>
-
-      <p class="hero-description">
-        Passionate about troubleshooting, networking,
-        and building practical technical solutions.
-      </p>
-
-      <div class="hero-buttons">
-
-        <a href="AdaliaMahabirResume2025.pdf"
-          target="_blank"
-          class="btn primary-btn">
-          Download Resume
-        </a>
-
-        <a href="mailto:adaliamahabir@gmail.com"
-          class="btn secondary-btn">
-          Contact Me
-        </a>
-
+    <div class="content">
+      <h1 class="name">Adalia Mahabir</h1>
+      <p>Computer Science with Management Student | IT Support Enthusiast</p>
+      <div class="buttons">
+        <a href="AdaliaMahabirResume2025.pdf" target="_blank" class="btn primary" aria-label="Download Resume">Download Resume</a>
+        <a href="mailto:adaliamahabir@gmail.com" class="btn secondary" aria-label="Send email to Adalia">Contact Me</a>
       </div>
-
-      <!-- SOCIALS -->
-      <div class="socials">
-
-        <a href="https://linkedin.com"
-          target="_blank"
-          aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-        <a href="https://github.com"
-          target="_blank"
-          aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-
-        <a href="https://instagram.com"
-          target="_blank"
-          aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-
+      <div class="socials" role="list">
+        <a href="https://linkedin.com/in/YOUR-LINK" role="listitem" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/YOUR-USERNAME" role="listitem" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://instagram.com/YOUR-HANDLE" role="listitem" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/YOUR-HANDLE" role="listitem" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
       </div>
-
     </div>
 
-    <!-- HERO IMAGE -->
-    <div class="hero-image">
-
+    <div class="illustration">
       <img
         src="https://cdn.pixabay.com/photo/2023/05/16/16/12/developer-7997495_960_720.png"
-        alt="Developer Illustration">
-
+        class="light-mode-img"
+      />
+      <img
+        src="https://cdn.pixabay.com/photo/2017/02/23/13/05/dark-2098836_960_720.png"
+        alt="Dark mode illustration of a developer"
+        class="dark-mode-img"
+        style="display:none;"
+      />
     </div>
-
   </header>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <h2>About Me</h2>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm Adalia Mahabir, a Computer Science student with a minor in Management and a Diploma in IT Networking. Passionate about solving real-world problems through technology and growing in a career that blends technical skills and leadership. Currently seeking a flexible, part-time IT support role around my study schedule.
+      </p>
+    </section>
 
-    <p>
-      I'm Adalia Mahabir, a Computer Science student
-      with a Diploma in IT Networking and a passion
-      for technology, troubleshooting, and continuous learning.
-    </p>
+    <section id="projects">
+      <h2>Projects</h2>
 
-    <p>
-      I enjoy solving technical problems, working on networking projects,
-      and expanding my skills in IT support and software development.
-    </p>
-
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section">
-
-    <h2>Skills</h2>
-
-    <div class="skills-grid">
-
-      <div class="skill-card">IT Support</div>
-
-      <div class="skill-card">Networking</div>
-
-      <div class="skill-card">Computer Repairs</div>
-
-      <div class="skill-card">Cisco Packet Tracer</div>
-
-      <div class="skill-card">SQL</div>
-
-      <div class="skill-card">Python Basics</div>
-
-      <div class="skill-card">Windows Administration</div>
-
-      <div class="skill-card">Troubleshooting</div>
-
-    </div>
-
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-
-    <h2>Projects</h2>
-
-    <div class="projects-grid">
-
-      <!-- PROJECT 1 -->
-      <div class="project-card">
-
-        <h3>Packet Tracer Labs</h3>
-
-        <p>
-          Networking simulations and configurations
-          built using Cisco Packet Tracer.
-        </p>
-
-        <a href="https://docs.google.com/document/d/1RydJRIjQVu-z5sCUpCIfxHi4IZa8fCxO/edit"
-          target="_blank"
-          class="project-link">
-          View Project
-        </a>
-
+      <div class="projects-category">
+        <h3>Packet Tracker Projects</h3>
+        <ul>
+          <li><a href="https://docs.google.com/document/d/1RydJRIjQVu-z5sCUpCIfxHi4IZa8fCxO/edit" target="_blank" rel="noopener noreferrer">Project 1</a></li>
+          <li><a href="https://docs.google.com/document/d/1jcLWzCts3keuE6dvUM52rBpLqjLiDiLM/edit" target="_blank" rel="noopener noreferrer">Project 2</a></li>
+          <li><a href="https://docs.google.com/document/d/1R7B39lKh_ICQtxyzAzxsTfh8eXGDMadI/edit" target="_blank" rel="noopener noreferrer">Project 3</a></li>
+          <li><a href="https://docs.google.com/document/d/1sxXiEVeiNS63eQOgAxNbkojKnbPja8Y6/edit" target="_blank" rel="noopener noreferrer">Project 4</a></li>
+          <li><a href="https://docs.google.com/document/d/1bf2ekqZ3a3one782b3YaSv0hN3OjzA-5/edit" target="_blank" rel="noopener noreferrer">Project 5</a></li>
+        </ul>
       </div>
 
-      <!-- PROJECT 2 -->
-      <div class="project-card">
-
-        <h3>Computer Repair Guides</h3>
-
-        <p>
-          Step-by-step troubleshooting and repair
-          documentation for hardware and software issues.
-        </p>
-
-        <a href="https://docs.google.com/document/d/13EwDqPq2qH8bx3d6j_AnvfE4vl8SLvWe/edit"
-          target="_blank"
-          class="project-link">
-          View Guide
-        </a>
-
+      <div class="projects-category">
+        <h3>Computer Repairs</h3>
+        <ul>
+          <li><a href="https://docs.google.com/document/d/13EwDqPq2qH8bx3d6j_AnvfE4vl8SLvWe/edit" target="_blank" rel="noopener noreferrer">Repair Guide 1</a></li>
+          <li><a href="https://docs.google.com/document/d/1-cB7sGdhsPYaqeZIU9dlLXruPd-GXulH/edit" target="_blank" rel="noopener noreferrer">Repair Guide 2</a></li>
+          <li><a href="https://docs.google.com/document/d/1-tQmVqnyChMyli1EkIrT57r2PiyBKagW/edit" target="_blank" rel="noopener noreferrer">Repair Guide 3</a></li>
+          <li><a href="https://docs.google.com/document/d/1IMuQDplLDrESeRUsmGKKFvxl2CM8tfji/edit" target="_blank" rel="noopener noreferrer">Repair Guide 4</a></li>
+          <li><a href="https://docs.google.com/document/d/1_N9aLmtI10fEQfL_MmDMvySiENVoZUxU/edit" target="_blank" rel="noopener noreferrer">Repair Guide 5</a></li>
+        </ul>
       </div>
 
-      <!-- PROJECT 3 -->
-      <div class="project-card">
-
-        <h3>SQL Database Projects</h3>
-
-        <p>
-          Database design, SQL queries,
-          and data organization projects.
-        </p>
-
-        <a href="https://docs.google.com/document/d/1XHuoz_avTfi-tpVNkwn0LslfayECa4k1/edit"
-          target="_blank"
-          class="project-link">
-          View Project
-        </a>
-
+      <div class="projects-category">
+        <h3>SQL Projects</h3>
+        <ul>
+          <li><a href="https://docs.google.com/document/d/1XHuoz_avTfi-tpVNkwn0LslfayECa4k1/edit" target="_blank" rel="noopener noreferrer">SQL Project 1</a></li>
+          <li><a href="https://docs.google.com/document/d/1oyd4U4f1gDXfF09OLgNJyMeVbVkSW4p2/edit" target="_blank" rel="noopener noreferrer">SQL Project 2</a></li>
+        </ul>
       </div>
 
-    </div>
+      
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>
+        <a href="AdaliaMahabirResume2025.pdf" target="_blank" aria-label="Download Resume PDF">Download My Resume (PDF)</a>
+      </p>
+    </section>
 
-  </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:adaliamahabir@gmail.com">adaliamahabir@gmail.com</a></p>
+      <p>Phone: 868-266-8355</p>
+      <p>GitHub: <a href="https://github.com/YOUR-USERNAME" target="_blank">github.com/YOUR-USERNAME</a></p>
+    </section>
+  </main>
 
-  <!-- RESUME -->
-  <section id="resume" class="section">
-
-    <h2>Resume</h2>
-
-    <p>
-      Download my latest resume below.
-    </p>
-
-    <a href="AdaliaMahabirResume2025.pdf"
-      target="_blank"
-      class="btn primary-btn">
-      Download Resume
-    </a>
-
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-
-    <h2>Contact</h2>
-
-    <p>Email: adaliamahabir@gmail.com</p>
-
-    <p>Phone: 868-266-8355</p>
-
-    <p>Location: Trinidad & Tobago</p>
-
-  </section>
-
-  <!-- FOOTER -->
   <footer>
-
-    <p>
-      Made with purpose ✨ | Adalia Mahabir © 2026
-    </p>
-
+    <p>Made with purpose ✨ | Adalia Mahabir &copy; 2025</p>
   </footer>
 
-  <!-- DARK MODE SCRIPT -->
   <script>
+    const toggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+    const lightImg = document.querySelector('.light-mode-img');
+    const darkImg = document.querySelector('.dark-mode-img');
 
-    const toggleBtn = document.getElementById('darkModeToggle');
+    toggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      body.classList.toggle('light-mode');
 
-    toggleBtn.addEventListener('click', () => {
-
-      document.body.classList.toggle('dark-mode');
-
-      if (document.body.classList.contains('dark-mode')) {
-        toggleBtn.textContent = '☀️ Light Mode';
+      if (body.classList.contains('dark-mode')) {
+        toggle.textContent = '☀️ Toggle Light Mode';
+        lightImg.style.display = 'none';
+        darkImg.style.display = 'block';
+      } else {
+        toggle.textContent = '🌙 Toggle Dark Mode';
+        lightImg.style.display = 'block';
+        darkImg.style.display = 'none';
       }
-
-      else {
-        toggleBtn.textContent = '🌙 Dark Mode';
-      }
-
     });
-
   </script>
-
 </body>
-
 </html>
